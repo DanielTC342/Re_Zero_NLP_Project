@@ -3,26 +3,25 @@
 ## Project definition
 
 This project aims to develop an episodic memory system for language-based agents, using structured narrative as the experimental framework.
-Specifically, it focuses on the first arc of the novel Re:Zero − Starting Life in Another World by Tappei Nagatsuki to evaluate the agent’s ability to retrieve past events, infer narrative relationships, and simulate early forms of memory consolidation.
+Specifically, it focuses on the first arc of the novel Re:Zero − Starting Life in Another World by Tappei Nagatsuki to evaluate the system’s capacity to facilitate event retrieval, infer narrative relationships, and simulate early forms of memory consolidation.
 
-The agent will be designed to answer queries such as “What did Subaru feel about Rem in Arc n?” by searching within its internal narrative memory rather than relying on external world knowledge.
+The current Prototype Project constructs "cognitive retrieval layer" that enables an AI agent to answer queries such as “What did Subaru feel about Rem in Arc n?” by searching within its internal narrative memory rather than relying on external world knowledge.
 
 In addition, the system introduces simplified mechanisms for consolidation (summarization) and outlines future extensions toward forgetting and memory reinforcement. These later processes are mentioned as part of the project’s long-term research outlook, while the current work primarily focuses on establishing a reproducible episodic retrieval pipeline.
 
 ### Key concepts
 - Episodic Memory
-- Semantic Memory
-- Narrative Memory
 - RAG (Retrieval-Augmented Generation)
 
 ### Project objectives
 - Extract and preprocess narrative data from the novel through an ETL (Extract–Transform–Load) pipeline.
-- Develop an AI agent capable of retrieving and reasoning over narrative episodes using a retrieval-augmented generation (RAG) framework.
-- Evaluate agent performance through quantitative and qualitative metrics, focusing on retrieval accuracy and narrative coherence.
+- Develop a retrieval framework capable of identifying and reasoning over narrative episodes by implementing a Retrieval-Augmented Generation (RAG) architecture.
+- Evaluate system's performance through quantitative and qualitative metrics, focusing on retrieval accuracy and narrative coherence.
 
-### Source of data and limitations
+### Source of data, limitations and legal
 - **Source:** Fan translations available on the "Witch Cult Translations" site (used here for prototyping and research).  
-- **Limitations & legal note:** The novel text is copyrighted by Tappei Nagatsuki and its licensees. This project will not publicly redistribute the full text. Instead, it will store transformed representations (embeddings, summaries, metadata). Any reuse of verbatim passages will follow fair-use guidelines for research; if the project produces a public demo, we will seek permissions or use short quoted excerpts with attribution, or only expose generated summaries rather than full chapters.
+- **Limitation of the project:** The source text lacks explicit speaker tags (it is not always clear who is speaking). Consequently, the pipeline requires a robust "Speaker Identification" mechanism to correctly attribute dialogue to specific characters.
+- **Legal note:** The novel text is copyrighted by Tappei Nagatsuki and its licensees. This project will not publicly redistribute the full text. Instead, it will store transformed representations (embeddings, summaries, metadata). Any reuse of verbatim passages will follow fair-use guidelines for research; if the project produces a public demo, we will seek permissions or use short quoted excerpts with attribution, or only expose generated summaries rather than full chapters.
 
 ## Future perspectives
 
@@ -37,13 +36,13 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 - Use consolidated memories to generate contextually coherent and emotionally consistent responses  
 
 #### Proposed phases
-1. **Entity & Relation Extraction:** Identify characters, objects, places, and events from the narrative  
-2. **Temporal & Causal Ordering:** Structure episodes chronologically and infer causal connections  
+1. **Entity and Relation Extraction:** Identify characters, objects, places, and events from the narrative  
+2. **Temporal and Causal Ordering:** Structure episodes chronologically and infer causal connections  
 3. **Emotion Tagging:** Annotate scenes with affective or emotional labels (e.g., joy, guilt, fear)  
 4. **Knowledge Graph Construction:** Build a graph-based structure connecting events, entities, and emotions  
 
 #### Expected outcome
-- A prototype of **narrative-semantic memory**, where the agent not only recalls events but also understands their meaning and emotional context — a first step toward *character-level narrative reasoning*.
+- A prototype of **narrative-semantic memory**, where the system not only recalls events but also understands their meaning and emotional context.
 
 ### 2. Adaptive Memory Management
 **Timeline:** To Be Defined.
@@ -72,17 +71,16 @@ The roadmap consists of next three phases.
 - Generate embeddings for scenes or episodes and store them in a vector database.
 
 ### Second Phase (RAG process)
-- Develop a retrieval engine to identify narrative episodes relevant to a user query based on semantic similarity.
-- Integrate a reranking mechanism to refine search results using contextual similarity.
-- Add a basic summarization module to compress older episodes into shorter semantic representations, introducing a first approximation to memory consolidation.
+- Develop the retrieval engine to identify narrative episodes based on vector similarity.
+- Integrate a reranking step to test if it improves the precision of the retrieved scenes compared to basic vector search.
+- Implement a basic summarization module that attempts to compress older episodes, testing if this improves the context window efficiency.
 
 ### Third Phase (Test)
 - Evaluate retrieval quality using Precision@k, Recall@k, and Top-k Accuracy.
 - Measure generative quality and coherence with ROUGE and cosine similarity between retrieved and generated text.
-- (Optional) Perform narrative consistency analysis, testing whether the agent preserves emotional and temporal continuity in its answers.
 
 ## Ethics, copyright and reuse
-- Respect copyright: the novel text is copyrighted. This research will favor transformed representations and summaries for public demos.  
+- The novel text is copyrighted. This research will favor transformed representations and summaries for public demos.  
 - If a public demo is published, obtain permissions or use limited excerpts with attribution.  
 - Follow ethical guidelines for fan content and avoid republishing full chapters.
 
