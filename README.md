@@ -72,12 +72,16 @@ The roadmap consists of next three phases.
 
 ### Second Phase (RAG process)
 - Develop the retrieval engine to identify narrative episodes based on vector similarity.
-- Integrate a reranking step to test if it improves the precision of the retrieved scenes compared to basic vector search.
-- Implement a basic summarization module that attempts to compress older episodes, testing if this improves the context window efficiency.
 
 ### Third Phase (Test)
 - Evaluate retrieval quality using Precision@k, Recall@k, and Top-k Accuracy.
 - Measure generative quality and coherence with ROUGE and cosine similarity between retrieved and generated text.
+
+### Fourth Phase (Advanced Optimization)
+This phase is optional and is scheduled to be developed between January and June of the year 2026 to have a functional prototype of the project before the January 19th, 2026 and a fully optimized version of the project before the Erasmus Master in Linguistic Data Science starts. This phase will cover the following:
+
+- Integrate a reranking step to test if it improves the precision of the retrieved scenes compared to basic vector search.
+- Implement a basic summarization module that attempts to compress older episodes, testing if this improves the context window efficiency.
 
 ## Ethics, copyright and reuse
 - The novel text is copyrighted. This research will favor transformed representations and summaries for public demos.  
