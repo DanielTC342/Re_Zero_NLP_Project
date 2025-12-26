@@ -74,7 +74,7 @@ The roadmap consists of next three phases.
 - Develop the retrieval engine to identify narrative episodes based on vector similarity.
 
 ### Third Phase (Test)
-- Evaluate retrieval quality using Precision@k, Recall@k, and Top-k Accuracy.
+- Evaluate retrieval quality using Precision@k and Top-k Accuracy.
 - Measure generative quality and coherence with ROUGE and cosine similarity between retrieved and generated text.
 
 ### Fourth Phase (Advanced Optimization)
@@ -82,6 +82,7 @@ This phase is optional and is scheduled to take place between January and June 2
 
 - Integrate a reranking step to test if it improves the precision of the retrieved scenes compared to basic vector search.
 - Implement a basic summarization module that attempts to compress older episodes, testing if this improves the context window efficiency.
+- Evaluate retrieval quality using using Recall@k.
 
 ## Ethics, copyright and reuse
 - The novel text is copyrighted. This research will favor transformed representations and summaries for public demos.  
