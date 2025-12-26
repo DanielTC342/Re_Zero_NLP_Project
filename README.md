@@ -78,7 +78,7 @@ The roadmap consists of next three phases.
 - Measure generative quality and coherence with ROUGE and cosine similarity between retrieved and generated text.
 
 ### Fourth Phase (Advanced Optimization)
-This phase is optional and is scheduled to be developed between January and June of the year 2026 to have a functional prototype of the project before the January 19th, 2026 and a fully optimized version of the project before the Erasmus Master in Linguistic Data Science starts. This phase will cover the following:
+This phase is optional and is scheduled to take place between January and June 2026. The goal is to have a functional prototype of the project ready by January 19, 2026 and a fully optimized version completed before the Erasmus Master in Linguistic Data Science begins. This phase will include the following:
 
 - Integrate a reranking step to test if it improves the precision of the retrieved scenes compared to basic vector search.
 - Implement a basic summarization module that attempts to compress older episodes, testing if this improves the context window efficiency.
