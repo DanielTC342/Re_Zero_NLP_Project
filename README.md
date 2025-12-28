@@ -11,7 +11,12 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 
 ### Key concepts
 - Episodic Memory
+- Semantic Memory
+- Embeddings
 - RAG (Retrieval-Augmented Generation)
+- ROUGE (Recall-Oriented Understudy for Gisting Evaluation)
+- NLP (Natural Language Processing)
+- Linguistic Data Science
 
 ### Project objectives
 - Extract and preprocess narrative data from the novel through an ETL (Extract–Transform–Load) pipeline.
@@ -95,3 +100,15 @@ This phase is optional and is scheduled to take place between January and June 2
 
 ## Author & copyright notice
 All original novel content is © Tappei Nagatsuki and rightsholders. This repository contains derived data (embeddings, summaries) and research code only. Any use or redistribution of verbatim text remains subject to the original copyright.
+
+## Sources
+
+UCSF Memory and Aging Center. (n.d.). Memory. https://memory.ucsf.edu/brain-health/memory
+
+IBM. (n.d.). What is retrieval-augmented generation (RAG)? https://www.ibm.com/think/topics/retrieval-augmented-generation
+
+Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., ... & Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. Advances in Neural Information Processing Systems, 33, 9459-9474.
+
+Reimers, N., & Gurevych, I. (2019). Sentence-BERT: Sentence embeddings using Siamese BERT-networks. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), 3982–3992.
+
+Lin, C. Y. (2004). ROUGE: A package for automatic evaluation of summaries. Text Summarization Branches Out, 74-81.
