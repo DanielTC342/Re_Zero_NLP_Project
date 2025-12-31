@@ -66,6 +66,10 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 - Enable role-play or “what-if” scenarios grounded in the story’s emotional and temporal logic  
 - This phase will only proceed if proper rights and ethical approvals are obtained  
 
+## Project flow chart
+
+![alt text](Flowchart.jpeg)
+
 ## Project roadmap
 
 The roadmap consists of next three phases.
