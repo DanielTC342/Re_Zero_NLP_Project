@@ -1,5 +1,7 @@
 # Narrative Memory AI — Re:Zero Project (Work in Progress): Building an Episodic Memory Retrieval Prototype
 
+Demo video: https://youtu.be/sVhRbqWlrq4?si=JdJK4nsk9o5LXSUM
+
 ## Project definition
 
 This project aims to develop an episodic memory system for language-based agents, using structured narrative as the experimental framework.
