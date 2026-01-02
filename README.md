@@ -25,57 +25,37 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 - Develop a retrieval framework capable of identifying and reasoning over narrative episodes by implementing a Retrieval-Augmented Generation (RAG) architecture.
 - Evaluate system's performance through quantitative and qualitative metrics, focusing on retrieval accuracy and narrative coherence.
 
-### Source of data, limitations and legal
-- **Source:** Fan translations available on the "Witch Cult Translations" site (used here for prototyping and research).  
-- **Limitation of the project:** The source text lacks explicit speaker tags (it is not always clear who is speaking). Consequently, the pipeline requires a robust "Speaker Identification" mechanism to correctly attribute dialogue to specific characters.
-- **Legal note:** The novel text is copyrighted by Tappei Nagatsuki and its licensees. This project will not publicly redistribute the full text. Instead, it will store transformed representations (embeddings, summaries, metadata). Any reuse of verbatim passages will follow fair-use guidelines for research; if the project produces a public demo, we will seek permissions or use short quoted excerpts with attribution, or only expose generated summaries rather than full chapters.
+### Source of data
+Fan translations available on the "Witch Cult Translations" site (used here for prototyping and research).
 
 ## Future perspectives
 
 ### 1. Toward Narrative and Semantic Memory
-**Timeline:** After completing the current episodic memory prototype (possible master thesis topic)
+**Timeline:** Post-Prototype / Potential Master's Thesis
 
-**Goal:** Study how language (narrative framing, labeling, and emotional annotation) transforms episodic memories into more abstract semantic representations, simulating human-like consolidation.
+**Goal:** Study how language (narrative framing, labeling and emotional annotation) transforms episodic memories into more abstract semantic representations, simulating human-like consolidation.
 
 #### Proposed objectives
 - Represent narrative events: *who did what, when, where, and why*  
 - Build relations between episodes (causal, temporal, emotional)  
-- Model memory dynamics: *remembering, forgetting, and prioritizing*  
+- Model memory dynamics: *remembering, forgetting and prioritizing*  
 - Use consolidated memories to generate contextually coherent and emotionally consistent responses  
-
-#### Proposed phases
-1. **Entity and Relation Extraction:** Identify characters, objects, places, and events from the narrative  
-2. **Temporal and Causal Ordering:** Structure episodes chronologically and infer causal connections  
-3. **Emotion Tagging:** Annotate scenes with affective or emotional labels (e.g., joy, guilt, fear)  
-4. **Knowledge Graph Construction:** Build a graph-based structure connecting events, entities, and emotions  
 
 #### Expected outcome
 - A prototype of **narrative-semantic memory**, where the system not only recalls events but also understands their meaning and emotional context.
 
-### 2. Adaptive Memory Management
-**Timeline:** To Be Defined.
-
-**Goal:** Develop mechanisms for dynamically prioritizing information during retrieval and generation.
-
-#### Possible research directions
-- Implement reinforcement-based strategies for memory strengthening or decay  
-- Explore contextual weighting to decide which memories remain active or are “forgotten”  
-- Study how memory compression affects narrative coherence and recall accuracy  
-
-### 3. Long-term vision (*Character-Level Simulation*)
-**Timeline:** To Be Defined.
+### 2. Long-term vision (*Character-Level Simulation*)
+**Timeline:** To be defined.
 
 **Goal:** Create interactive agents that emulate the memory and behavior of major characters (*e.g.*, Subaru, Emilia, Rem).  
 
-- Each character’s responses would depend on their internal narrative memory  
 - Enable role-play or “what-if” scenarios grounded in the story’s emotional and temporal logic  
 - This phase will only proceed if proper rights and ethical approvals are obtained
 
-### 4. Industrial Transferability (Enterprise AI Memory)
+### 3. Industrial Transferability (Enterprise AI Memory)
 **Timeline:** Long-term Research / Startup Phase
 
 **Goal:** Just as an agent must recall specific plot points to understand a character's current emotion, a Business AI must recall a customer's specific history to understand their current needs.
-
 
 #### Proposed phases and expected outcome
 
@@ -107,11 +87,6 @@ This phase is optional and is scheduled to take place between January and June 2
 - Integrate a reranking step to test if it improves the precision of the retrieved scenes compared to basic vector search.
 - Implement a basic summarization module that attempts to compress older episodes, testing if this improves the context window efficiency.
 - Evaluate retrieval quality using using Recall@k.
-
-## Ethics, copyright and reuse
-- The novel text is copyrighted. This research will favor transformed representations and summaries for public demos.  
-- If a public demo is published, obtain permissions or use limited excerpts with attribution.  
-- Follow ethical guidelines for fan content and avoid republishing full chapters.
 
 ## Project setup & minimal reproducible demo
 - Tools: Python, Jupyter notebooks.  
