@@ -33,7 +33,8 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 ## Future perspectives
 
 ### 1. Toward Narrative and Semantic Memory
-**Timeline:** After completing the current episodic memory prototype (possible master thesis topic)  
+**Timeline:** After completing the current episodic memory prototype (possible master thesis topic)
+
 **Goal:** Study how language (narrative framing, labeling, and emotional annotation) transforms episodic memories into more abstract semantic representations, simulating human-like consolidation.
 
 #### Proposed objectives
@@ -53,6 +54,7 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 
 ### 2. Adaptive Memory Management
 **Timeline:** To Be Defined.
+
 **Goal:** Develop mechanisms for dynamically prioritizing information during retrieval and generation.
 
 #### Possible research directions
@@ -62,11 +64,22 @@ In addition, the system introduces simplified mechanisms for consolidation (summ
 
 ### 3. Long-term vision (*Character-Level Simulation*)
 **Timeline:** To Be Defined.
+
 **Goal:** Create interactive agents that emulate the memory and behavior of major characters (*e.g.*, Subaru, Emilia, Rem).  
 
 - Each character’s responses would depend on their internal narrative memory  
 - Enable role-play or “what-if” scenarios grounded in the story’s emotional and temporal logic  
-- This phase will only proceed if proper rights and ethical approvals are obtained  
+- This phase will only proceed if proper rights and ethical approvals are obtained
+
+### 4. Industrial Transferability (Enterprise AI Memory)
+**Timeline:** Long-term Research / Startup Phase
+
+**Goal:** Just as an agent must recall specific plot points to understand a character's current emotion, a Business AI must recall a customer's specific history to understand their current needs.
+
+
+#### Proposed phases and expected outcome
+
+To be defined.
 
 ## Project flow chart
 
